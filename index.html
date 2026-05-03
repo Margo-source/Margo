@@ -82,7 +82,7 @@
   
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/index.css?v=20260503-1">
   
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -190,7 +190,7 @@
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="container is-widescreen publication-title-container">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
@@ -225,22 +225,28 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
+  <div class="container is-fluid teaser-container">
     <div class="hero-body">
       <div class="teaser-video-grid" id="video-demo-section">
-        <video poster="" id="tree" class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
-          <source src="assets/v1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <video class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
-          <source src="assets/0423_speed.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <div class="teaser-video-item">
+          <video poster="" id="tree" class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
+            <source src="assets/v1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h2 class="subtitle has-text-centered teaser-video-title">
+            MSU Private 5G/6G Network Platform RU.
+          </h2>
+        </div>
+        <div class="teaser-video-item">
+          <video class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
+            <source src="assets/0423_speed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h2 class="subtitle has-text-centered teaser-video-title">
+            VR Evaluation Demo Video.
+          </h2>
+        </div>
       </div>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-    MSU Private 5G/6G Network Platform RU.       <a href="#video-demo-section"> See the VR Evaluation Demo Video →</a>
-      </h2>
     </div>
   </div>
 </section>
