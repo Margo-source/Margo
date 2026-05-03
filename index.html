@@ -227,11 +227,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="assets/v1.mp4" type="video/mp4">
-      </video>
+      <div class="teaser-video-grid" id="video-demo-section">
+        <video poster="" id="tree" class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
+          <source src="assets/v1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video class="teaser-video" autoplay controls muted loop playsinline preload="metadata">
+          <source src="assets/0423_speed.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
     MSU Private 5G/6G Network Platform RU.       <a href="#video-demo-section"> See the VR Evaluation Demo Video →</a>
@@ -313,43 +318,6 @@
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-<!-- Video Demo -->
-<section class="hero is-small is-light" id="video-demo-section">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Video Demo</h2>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-
-          <video
-            id="video-demo"
-            width="100%"
-            autoplay
-            muted
-            loop
-            controls
-            playsinline
-            preload="metadata"
-            style="border-radius: 8px;"
-          >
-            <source src="assets/0423_speed.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
 
 
 
